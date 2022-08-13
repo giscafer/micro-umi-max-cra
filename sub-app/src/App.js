@@ -16,15 +16,16 @@ const About = lazy(() => import('./pages/About'));
 const RouteExample = () => {
   return (
     <Router basename={window.__POWERED_BY_QIANKUN__ ? '/sub-app' : '/'}>
-      <nav>
+      <nav className="nav">
         <Link to="/">Home</Link>
         <Link to="/about" style={{ paddingLeft: 20 }}>
           About
         </Link>
       </nav>
+      <p>微前端点击about路由，找不到页面</p>
       <Routes>
         <Route path="/" exact element={<Home />} />
-        <Route path="about" element={<About />} />
+        <Route path="/about" element={<About />} />
       </Routes>
     </Router>
   );

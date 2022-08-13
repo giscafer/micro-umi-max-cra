@@ -1,6 +1,9 @@
 .app-main {
   padding: 30px;
 }
+.nav {
+  font-size: 20px;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .app-logo {
