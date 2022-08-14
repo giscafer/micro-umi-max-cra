@@ -46,7 +46,7 @@ export default defineConfig({
       apps: [
         {
           name: 'sub-app',
-          entry: '//localhost:7100',
+          entry: '//localhost:7100/sub-app',
         },
       ],
     },

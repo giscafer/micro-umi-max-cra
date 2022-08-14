@@ -1,4 +1,3 @@
-import { lazy } from 'react';
 import {
   BrowserRouter as Router,
   Link,
@@ -10,8 +9,9 @@ import {
 import 'antd/dist/antd.min.css';
 import './App.css';
 
+import About from './pages/About';
 import Home from './pages/Home';
-const About = lazy(() => import('./pages/About'));
+// const About = lazy(() => import('./pages/About'));
 
 const RouteExample = () => {
   return (
