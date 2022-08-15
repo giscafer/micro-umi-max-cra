@@ -6,7 +6,7 @@ module.exports = {
   webpack: (config) => {
     config.output.library = `${appName}-[name]`;
     config.output.libraryTarget = 'umd';
-    config.output.publicPath = !pro ? '//localhost:7100' : '/';
+    config.output.publicPath = !pro ? 'http://localhost:7100' : '/';
     config.output.chunkLoadingGlobal = `webpackJsonp_${appName}`;
     config.output.globalObject = 'window';
 

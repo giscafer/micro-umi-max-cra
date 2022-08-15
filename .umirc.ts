@@ -50,7 +50,7 @@ export default defineConfig({
       apps: [
         {
           name: 'subApp',
-          entry: '//localhost:7100',
+          entry: 'http://localhost:7100',
         },
       ],
       sandbox: true,
