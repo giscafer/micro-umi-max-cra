@@ -25,7 +25,7 @@ export default defineConfig({
     {
       name: 'SubApp',
       path: '/sub-app',
-      microApp: 'sub-app',
+      microApp: 'subApp',
     },
     {
       name: '首页',
@@ -49,10 +49,11 @@ export default defineConfig({
     master: {
       apps: [
         {
-          name: 'sub-app',
+          name: 'subApp',
           entry: '//localhost:7100',
         },
       ],
+      sandbox: true,
     },
   },
 });

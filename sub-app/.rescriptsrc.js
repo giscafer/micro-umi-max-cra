@@ -1,10 +1,13 @@
-const { name } = require('./package.json');
+const pro = process.env.NODE_ENV === 'production';
+
+const appName = 'subApp';
 
 module.exports = {
   webpack: (config) => {
-    config.output.library = `${name}-[name]`;
+    config.output.library = `${appName}-[name]`;
     config.output.libraryTarget = 'umd';
-    config.output.chunkLoadingGlobal = `webpackJsonp_${name}`;
+    config.output.publicPath = !pro ? '//localhost:7100' : '/';
+    config.output.chunkLoadingGlobal = `webpackJsonp_${appName}`;
     config.output.globalObject = 'window';
 
     return config;

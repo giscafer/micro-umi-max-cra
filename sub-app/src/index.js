@@ -4,7 +4,7 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 
 let root;
-/*const root = ReactDOM.createRoot(document.getElementById('root'));
+/*const root = ReactDOM.createRoot(document.getElementById('subAppRoot'));
  root.render(
   <React.StrictMode>
     <App />
@@ -14,8 +14,8 @@ let root;
 function render(props) {
   const { container } = props;
   const rootElement = container
-    ? container.querySelector('#root')
-    : document.querySelector('#root');
+    ? container.querySelector('#subAppRoot')
+    : document.querySelector('#subAppRoot');
   root = ReactDOM.createRoot(rootElement);
   root.render(<App />);
 }

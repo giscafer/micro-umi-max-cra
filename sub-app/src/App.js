@@ -27,6 +27,7 @@ const RouteExample = () => {
         <Route path="/" exact element={<Home />} />
         <Route path="/about" element={<About />} />
       </Routes>
+      <p>sss</p>
     </Router>
   );
 };
