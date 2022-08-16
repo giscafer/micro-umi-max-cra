@@ -10,18 +10,6 @@ export default defineConfig({
     title: '@umijs/max',
   },
   routes: [
-    //  不行，子应用路由跳转被主应用拦截，找不到路由报错
-    // {
-    //   path: '/',
-    //   component: '@/layouts/index.tsx',
-    //   routes: [
-    //     {
-    //       path: '/sub-app',
-    //       microApp: 'sub-app',
-    //     },
-    //   ],
-    // },
-    //  外边也不行，子应用路由跳转被主应用拦截，找不到路由报错
     {
       name: 'SubApp',
       path: '/sub-app',
