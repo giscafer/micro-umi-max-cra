@@ -26,6 +26,11 @@ export default defineConfig({
       name: 'SubApp',
       path: '/sub-app',
       microApp: 'subApp',
+      routes: [
+        {
+          path: '/sub-app/*',
+        },
+      ],
     },
     {
       name: '首页',
